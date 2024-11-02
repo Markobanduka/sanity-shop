@@ -1,5 +1,5 @@
 export default {
-  name: 'heroImages',
+  name: 'heroImage',
   type: 'document',
   title: 'Two Hero Images',
   fields: [
