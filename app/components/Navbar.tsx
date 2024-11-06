@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, UserIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -16,7 +16,7 @@ const links = [
     href: "/Mat",
   },
   {
-    name: "Barbell-Pad",
+    name: "Barbell Pad",
     href: "/Barbell-Pad",
   },
   {
@@ -65,6 +65,12 @@ const Navbar = () => {
             <span className="hidden text-xs font-semibold text-gray-500 sm:block">
               Cart
             </span>
+          </Button>
+          <Button asChild>
+            <Link href="/signin">
+              <UserIcon />
+              Sign In
+            </Link>
           </Button>
         </div>
       </div>
