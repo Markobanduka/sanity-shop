@@ -11,32 +11,41 @@ export default {
     {
       name: 'images',
       type: 'array',
-      title: 'Product images',
+      title: 'Product Images',
       of: [{type: 'image'}],
     },
     {
       name: 'description',
       type: 'text',
-      title: 'Description of Product',
+      title: 'Description of product',
     },
     {
       name: 'slug',
       type: 'slug',
-      title: 'Product slug',
+      title: 'Product Slug',
       options: {
         source: 'name',
       },
     },
     {
       name: 'price',
-      type: 'number',
       title: 'Price',
+      type: 'number',
+    },
+    {
+      name: 'price_id',
+      title: 'Stripe Price ID',
+      type: 'string',
     },
     {
       name: 'category',
-      type: 'reference',
       title: 'Product Category',
-      to: [{type: 'category'}],
+      type: 'reference',
+      to: [
+        {
+          type: 'category',
+        },
+      ],
     },
   ],
 }
